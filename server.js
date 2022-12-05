@@ -34,7 +34,7 @@ routers.use("/api/user/", userRouter)
 routers.use("/api/emp/", employeeRouter)
 
 routers.route("/").get((req, res) => {
-    res.send("<h1>Welcome to the backend app - assignment 1</h1>");
+    res.send("<h1>Welcome to the backend app - assignment 2</h1>");
 });
 
 const port = process.env.PORT || 6000
