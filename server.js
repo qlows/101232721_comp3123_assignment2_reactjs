@@ -43,7 +43,7 @@ routers.use("/api/user/", userRouter)
 routers.use("/api/emp/", employeeRouter)
 
 routers.route("/").get((req, res) => {
-    res.send(Home);
+    res.send("<h1>hi</h1>");
 });
 
 const port = process.env.PORT || 6000
