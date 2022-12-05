@@ -81,6 +81,7 @@ routes.put("/employees/:id", async (req, res) => {
         const updatedEmployee = await employeeModel.findByIdAndUpdate(req.params.id, req.body)
         const newEmp = await updatedEmployee.save()
         res.status(200).json(newEmp)
+        res.json("Employee Updated Successfully.")
     }
     catch (error) {
         res.status(400).json(error)
