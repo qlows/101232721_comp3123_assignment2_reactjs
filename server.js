@@ -3,7 +3,10 @@ const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
 const routers = express();
 const bcrypt = require("bcrypt")
-
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './src/App'
+import { BrowserRouter} from 'react-router-dom';
 import Home from "./src/pages/Home";
 import Add from "./src/pages/Add";
 import View from './src/pages/View';

@@ -18,11 +18,11 @@ function App() {
         <ToastContainer />
         <Routes>
           
-          {/* <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path='/add' element={<Add />} />
           <Route path='/update/:id' element={<Add />} />
           <Route path='/view/:id' element={<View />} />
-          <Route path='/about' element={<About />} /> */}
+          <Route path='/about' element={<About />} />
         </Routes>
       </div>
     </BrowserRouter>
