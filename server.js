@@ -12,7 +12,7 @@ const userRouter = require("./routes/user.js");
 
 //routers.use(express.json()); 
 
-const DB_URL = "mongodb+srv://qlows:ananinamizuck@cluster0.hm9ineu.mongodb.net/comp3123_assigment1?retryWrites=true&w=majority"
+const DB_URL = "mongodb+srv://qlows:ananinamizuck@cluster0.hm9ineu.mongodb.net/qlows?retryWrites=true&w=majority"
 
 routers.use(bodyParser.urlencoded({ extended: true }))
 routers.use(bodyParser.json())
@@ -37,8 +37,7 @@ routers.route("/").get((req, res) => {
     res.send("<h1>Welcome to the backend app - assignment 1</h1>");
 });
 
-const SERVER_PORT = 3000
-routers.listen(SERVER_PORT, () =>{
-    console.log(`Server running at http://localhost:${SERVER_PORT}/`)
-}) 
-
+const port = process.env.PORT || 6000
+routers.listen(port, () =>
+    console.log(`Server running on port 6000`)
+)
