@@ -12,7 +12,7 @@ const userRouter = require("./routes/user.js");
 
 //routers.use(express.json()); 
 
-const DB_URL = "mongodb+srv://qlows:ananinamizuck@cluster0.hm9ineu.mongodb.net/qlows?retryWrites=true&w=majority"
+const DB_URL = "mongodb+srv://qlows:ananinamizuck@cluster0.hm9ineu.mongodb.net/comp3123_assigment1?retryWrites=true&w=majority"
 
 routers.use(bodyParser.urlencoded({ extended: true }))
 routers.use(bodyParser.json())
