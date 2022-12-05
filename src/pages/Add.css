@@ -1,0 +1,27 @@
+input[type="submit"]:hover {
+    background-color: darkolivegreen;
+}
+
+input[type="submit"] {
+    background-color: darkorange;
+    width: 100%;
+    color: wheat;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid teal;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
