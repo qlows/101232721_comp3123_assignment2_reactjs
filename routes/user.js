@@ -7,7 +7,7 @@ const bcrypt = require("bcrypt")
 
 // User signup
 routes.post("/signup", async(req, res) => {
-    if(req.body) {
+    if(req.body.params) {
         return res.status(400).json({
             message: "Content Can Not Be Empty"
         });
@@ -27,7 +27,7 @@ routes.post("/signup", async(req, res) => {
 
 // User login
 routes.post("/login", async(req, res) =>{
-    if(req.body) {
+    if(req.body.params) {
         return res.status(400).json({
             message: "Content Can Not Be Empty"
         });

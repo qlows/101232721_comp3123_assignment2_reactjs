@@ -15,7 +15,7 @@ const mongoose = require("mongoose")
 //http://localhost:3000/api/emp/employees
 //User can create new employee
 routes.post("/employees", async (req, res) => {
-    if (req.body) {
+    if (req.body.params) {
         return res.status(400).json({
             message: "Content Can Not Be Empty"
         });
@@ -34,7 +34,7 @@ routes.post("/employees", async (req, res) => {
 // http://localhost:3000/api/emp/employees
 // User can get all employee list
 routes.get("/employees", async (req, res) => {
-    if (req.body) {
+    if (req.body.params) {
         return res.status(400).json({
             message: "Content Can Not Be Empty"
         });
@@ -53,7 +53,7 @@ routes.get("/employees", async (req, res) => {
 // http://localhost:3000/api/emp/employees/63606a1c5dc8c173faddfd0b
 // User can get employee details by employee id
 routes.get("/employees/:id", async (req, res) => {
-    if (req.body) {
+    if (req.body.params) {
         return res.status(400).json({
             message: "Content Can Not Be Empty"
         });
@@ -71,7 +71,7 @@ routes.get("/employees/:id", async (req, res) => {
 // http://localhost:3000/api/emp/employees/63606a1c5dc8c173faddfd0b
 // User can update employee details
 routes.put("/employees/:id", async (req, res) => {
-    if (req.body) {
+    if (req.body.params) {
         return res.status(400).json({
             message: "Content Can Not Be Empty"
         });
@@ -89,7 +89,7 @@ routes.put("/employees/:id", async (req, res) => {
 
 // User can delete employee by employee id
 routes.delete("/employees/:id", async (req, res) => {
-    if (req.body) {
+    if (req.body.params) {
         return res.status(400).json({
             message: "Content Can Not Be Empty"
         });
