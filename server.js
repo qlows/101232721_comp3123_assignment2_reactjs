@@ -4,6 +4,12 @@ const mongoose = require("mongoose")
 const routers = express();
 const bcrypt = require("bcrypt")
 
+import Home from "./src/pages/Home";
+import Add from "./src/pages/Add";
+import View from './src/pages/View';
+import About from "./src/pages/About"
+import Header from './src/components/Header';
+
 // add employee route
 const employeeRouter = require("./routes/employee.js")
 // add user route
@@ -34,7 +40,7 @@ routers.use("/api/user/", userRouter)
 routers.use("/api/emp/", employeeRouter)
 
 routers.route("/").get((req, res) => {
-    res.send("<h1>Welcome to the backend app - assignment 2</h1>");
+    res.send(Home);
 });
 
 const port = process.env.PORT || 6000
